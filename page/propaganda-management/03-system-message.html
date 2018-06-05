@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    
+   <link rel="stylesheet" href="../../css/base.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    
+    <script src="../../js/response.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	response(1000);//设置html标签font-size尺寸
+    </script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../css/bootstrap-table.css">
+
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js" ></script>
+	<script src="../../js/bootstrap-table.js"></script>
+	<!-- Latest compiled and minified Locales -->
+	<!-- <script src="js/bootstrap-table-zh-CN.min.js"></script> -->
+	<script src="../../js/bootstrap-table-zh-CN.min.js"></script>
+	
+	
+	
+	<link href="../../css/index.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./03-system-message.css" />
+   
+</head>
+<body>
+	
+
+	  
+	    <div class="mui-content mui-scroll-wrapper table">
+	    	<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">宣传管理</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">系统消息管理</li>
+			  </ol>
+			</nav>
+			<div class="content">
+				<div class="form-wrap">
+					<form>
+					  	<ul class='row'>
+					  		
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="message-title" class="col-sm-5 col-form-label">消息标题</label>
+								    <div class="col-sm-7">
+								      <input type="text"  class="form-control" id="message-title" placeholder="请输入消息标题">
+								    </div>
+								   
+					  		</li>
+					  		
+					  		
+					  		
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								   <div class="btn-group" role="group" aria-label="Basic example">
+									  <button type="button" class="btn  btn-primary">查询</button>
+									 
+									   <button type="button" class="btn  btn-primary" data-toggle="modal" data-target="#exampleModal">+发送消息</button>
+									</div>
+					  		</li>
+					  	</ul>
+					  
+					</form>
+					
+					
+					
+					
+				</div>
+			     <div class="wrap">
+			      	<div class="mui-scroll">
+			        	<table id='table' 
+			        		data-height="400"
+			        		data-pagination="true"
+				           data-page-size="5"
+				           data-page-list="[5,8,10]"
+				           data-pagination-first-text="First"
+				           data-pagination-pre-text="Previous"
+				           data-pagination-next-text="Next"
+				           data-pagination-last-text="Last">
+						    <!--<thead>
+						        <tr>
+						            <th data-field="id">Item ID</th>
+						            <th data-field="name">Item Name</th>
+						            <th data-field="price">Item Price</th>
+						        </tr>
+						    </thead>-->
+						</table>
+			    	 </div>
+		      	
+		      </div>
+				
+				
+				
+				
+			</div>
+	    </div> 
+	     <!--表格结束-->
+	       <!-- Modal -->
+		<div class="modal  fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" >
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">提示</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		       	 <form>
+				 
+				 <div class="form-group row">
+				    <label for="staticEmail" class="col-sm-2 col-form-label" ><i>* </i><span>发送对象</span></label>
+				    <div class="col-sm-5">
+				      <select name="" placeholder='事业部' class="custom-select">
+				      	<option value="事业部">城市</option>
+				      	<option value="事业部">便利店</option>
+				      </select>
+				    </div>
+				    
+				  </div>
+				   <div class="form-group row">
+				    <label for="staticEmail" class="col-sm-2 col-form-label"> <i>*</i><span>选择便利店</span></label>
+				    <div class="col-sm-5">
+				      <select name="" placeholder='事业部' class="custom-select">
+				      	<option value="事业部">A便利店</option>
+				      	<option value="事业部">B便利店</option>
+				      </select>
+				    </div>
+				  </div>
+				   <div class="form-group row">
+				    <label for="staticEmail" class="col-sm-2 col-form-label" ><i>*</i><span>任务城市</span></label>
+				    <div class="col-sm-5">
+				      <select name="" placeholder='事业部' class="custom-select">
+				      	<option value="事业部">长沙</option>
+				      	<option value="事业部">天津</option>
+				      </select>
+				    </div>    
+				  </div>
+				   <div class="form-group row">
+				    <label for="staticEmail" class="col-sm-2 col-form-label" ><i>*</i><span>消息标题</span></label>
+				    <div class="col-sm-5">
+				     <input type="text"  class="form-control" id="staticEmail" placeholder="请输入消息标题">
+				    </div>
+				    
+				  </div>
+				  <div class="form-group row">
+				    <label for="staticEmail" class="col-sm-2 col-form-label" ><i>*</i><span>消息内容</span></label>
+				    <div class="col-sm-10">
+				      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="请输入任务描述（50字）"></textarea>
+				    </div>
+				  </div>
+				
+				</form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-light" data-dismiss="modal">取消</button>
+		        <button type="button" class="btn btn-primary" >保存</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	 
+	 
+	
+	<script>
+		$(function(){
+			$('#exampleModal').modal('show');
+			$('#table').bootstrapTable({
+//			   showRefresh: true,
+//			   showColumns: true,
+//              search: true,
+			    columns: [
+//			    {
+//                  field: 'startTime',
+//                  title: '开始 时间'
+//              }, 
+//              {
+//                  field: 'endTime',
+//                  title: '结束时间'
+//           	},
+ //            {
+//                  field: 'source',
+//                  title: '来源'
+//              }, {
+//                  field: 'name',
+//                  title: '便利店名称'
+//              }, {
+//                  field: 'cell-phone-number',
+//                  title: '便利店手机号'
+//              }, 
+//				{
+//                  field: 'business-department',
+//                  title: '事业部'
+//              }, {
+//                  field: 'sales-area',
+//                  title: '销售大区'
+//              },  {
+//                  field: 'city',
+//                  title: '城市'
+//              }, 
+//              {
+//                  field: 'order-number',
+//                  title: '订单号'
+//              },
+//				{
+//                  field: 'return-date',
+//                  title: '返现日期'
+//              },
+//				{
+//                  field: 'SKU-name',
+//                  title: 'SKU名称'
+//              },
+//              {
+//                  field: 'sales-amount',
+//                  title: '销售金额(元)'
+//              },
+//				{
+//                  field: 'sales-number',
+//                  title: '销售数'
+//              }
+//				{
+//					field:'role',
+//					title:"角色",
+//				},
+//				{
+//					field:'password',
+//					title:"密码",
+//				},
+//				{
+//					field:'status',
+//					title:"状态",
+//				},
+//				{
+//					field:'total-number-sales',
+//					title:"销售总箱数",
+//				},
+//				{
+//					field:'total-sales-amount',
+//					title:"销售总金额",
+//				},
+//				{
+//					field:'current-integral',
+//					title:"当前积分",
+//				},
+//				{
+//					field:'operation',
+//					title:"操作",
+//				},
+//				{
+//					field:'salesman-name',
+//					title:'销售人员姓名',
+//				},
+//				{
+//					field:'salesman-cell-phone-number',
+//					title:'销售人员手机号',
+//				}
+//				{
+//					field:"title",
+//					title:"标题"
+//				},
+//				{
+//					field:"image",
+//					title:"图片"
+//				},
+//				{
+//					field:"link",
+//					title:"链接"
+//				},
+//				{
+//					field:"article-title",
+//					title:"文章标题"
+//				},
+//				{
+//					field:"brief-description",
+//					title:"简要描述"
+//				},
+//				{
+//					field:"topic-classification",
+//					title:"主题分类"
+//				},
+//				{
+//					field:"status",
+//					title:"状态"
+//				},				
+//				{
+//					field:"training-operation",
+//					title:"培训操作"
+//				},
+//				{
+//					field:"operation",
+//					title:"操作"
+//				},
+//				{
+//					field:"push-operation",
+//					title:"推送操作"
+//				},
+				{
+					field:'send-time',
+					title:"发送时间"
+				},
+				{
+					field:'send-object',
+					title:"发送对象"
+				},
+				{
+					field:'message-title',
+					title:"消息标题"
+				},
+				{
+					field:'message-content',
+					title:"消息内容"
+				},
+				{
+					field:'operation',
+					title:"操作"
+				}
+				],
+				
+               url:'../../json/03-system-message.json'
+			});
+	 
+	    });
+			
+			
+		
+		
+	 
+	</script>
+</body>
+</html>

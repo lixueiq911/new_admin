@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    
+    <script src="js/response.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	response();//设置html标签font-size尺寸
+    </script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+	<!-- Latest compiled and minified Locales -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+	
+	
+	
+	<link href="css/index.css" rel="stylesheet"/>
+   
+</head>
+<body>
+	
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left">
+	    <div class="mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	       	 <ul class="mui-table-view"> 
+		        <li class="mui-table-view-cell mui-collapse">
+		            <a class="mui-navigate-right" href="#">基础设置</a>
+		            <div class="mui-collapse-content">
+		                <p>账号管理</p>
+		                <p>销量管理</p>
+		                <p>销量奖励管理</p>
+		                <p>销售人员管理</p>
+		                <p>返利比率管理</p>
+		            </div>
+		            
+		        </li>
+		        <li class="mui-table-view-cell mui-collapse">
+		            <a class="mui-navigate-right" href="#">宣传管理</a>
+		            <div class="mui-collapse-content">
+		                <p>轮播图管理</p>
+		                <p>微信文章管理</p>
+		                <p>系统消息管理</p>
+		                <p>任务管理</p>
+		                <p>任务回复</p>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell mui-collapse">
+		            <a class="mui-navigate-right" href="#">统计分析</a>
+		            <div class="mui-collapse-content">
+		                <p>执行情况分析</p>
+		            </div>
+		        </li>
+		        
+		    </ul>
+	      	
+	      </div>
+	    </div>
+	  </aside>
+	  <!--侧滑导航结束-->
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+	      	
+			    <ul class="mui-row clearfix">
+			    	<li class='mui-pull-left off'>
+			    		<div class="logo">
+			    			<img ondragstart='return false' src="img/logo.png" alt="" />
+			    		</div>
+			    		
+			    	</li>
+			    	<li class='mui-pull-right'>
+			    		<p>欢迎您,管理员</p>
+			    		<button type="button" class="mui-btn">退出</button>
+			    	</li>
+			    	
+			    </ul>
+			
+	    </header>
+	     	<!--头部结束-->
+	    <div class="mui-content mui-scroll-wrapper table">
+	    	<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">Home</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Library</li>
+			  </ol>
+			</nav>
+			<div class="form-wrap">
+				<ul class="row">
+					<li class="col">
+						  <div class="input-group">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text" id="btnGroupAddon">便利店手机号</div>
+						    </div>
+						    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+						  </div>
+					</li>
+					<li class="col">
+						  <div class="input-group">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text" id="btnGroupAddon">便利店名称</div>
+						    </div>
+						    <select class="custom-select" id="inputGroupSelect01">
+							    <option selected>Choose...</option>
+							    <option value="1">One</option>
+							    <option value="2">Two</option>
+							    <option value="3">Three</option>
+							</select>
+						  </div>
+					</li>
+					
+					
+				</ul>
+				<ul class="row">
+					
+					<li class="col">
+						  <div class="input-group">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text" id="btnGroupAddon">事业部</div>
+						    </div>
+						    <select class="custom-select" id="inputGroupSelect01">
+							    <option selected>Choose...</option>
+							    <option value="1">One</option>
+							    <option value="2">Two</option>
+							    <option value="3">Three</option>
+							</select>
+						  </div>
+					</li>
+					<li class="col">
+						  <div class="input-group">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text" id="btnGroupAddon">区域</div>
+						    </div>
+						    <select class="custom-select" id="inputGroupSelect01">
+							    <option selected>Choose...</option>
+							    <option value="1">One</option>
+							    <option value="2">Two</option>
+							    <option value="3">Three</option>
+							</select>
+						  </div>
+					</li>
+					<li class="col">
+						  <div class="input-group">
+						    <div class="input-group-prepend">
+						      <div class="input-group-text" id="btnGroupAddon">城市</div>
+						    </div>
+						    <select class="custom-select" id="inputGroupSelect01">
+							    <option selected>Choose...</option>
+							    <option value="1">One</option>
+							    <option value="2">Two</option>
+							    <option value="3">Three</option>
+							</select>
+						  </div>
+					</li>
+					
+				</ul>
+				
+				<div class="btn-group" role="group" aria-label="Basic example">
+				  <button type="button" class="btn  btn-primary">查询 </button>
+				  <button type="button" class="btn  btn-primary">导出</button>
+				  <button type="button" class="btn  btn-primary">批量导入</button>
+				  <button type="button" class="btn  btn-primary">+新增账号</button>
+				</div>
+				
+				
+			</div>
+	      <div class="mui-scroll">
+	        	<table id='table' >
+				    <!--<thead>
+				        <tr>
+				            <th data-field="id">Item ID</th>
+				            <th data-field="name">Item Name</th>
+				            <th data-field="price">Item Price</th>
+				        </tr>
+				    </thead>-->
+				</table>
+	      </div>
+	    </div> 
+	     <!--表格结束-->
+	  </div>
+	</div>
+	
+	<script>
+		$(function(){
+			$('#table').bootstrapTable({
+			   
+			    columns: [{
+                    field: 'time',
+                    title: '创建日期'
+                }, {
+                    field: 'source',
+                    title: '来源'
+                }, {
+                    field: 'name',
+                    title: '便利店名称'
+                }, {
+                    field: 'cell-phone-number',
+                    title: '便利店手机号'
+                }, {
+                    field: 'business-department',
+                    title: '事业部'
+                }, {
+                    field: 'sales-area',
+                    title: '销售大区'
+                },  {
+                    field: 'city',
+                    title: '城市'
+                },  {
+                    field: 'order-number',
+                    title: '订单号'
+                }, {
+                    field: 'return-date',
+                    title: '返现日期'
+                },{
+                    field: 'SKU-name',
+                    title: 'SKU名称'
+                },{
+                    field: 'sales-amount',
+                    title: '销售金额(元)'
+                },{
+                    field: 'sales-number',
+                    title: '销售数'
+                }],
+                data:[
+                	{
+						 "id":1,	
+						 "time":2017,
+						 "source":"长沙",
+						 "name":"千寻",
+						 "cell-phone-number":17300797573,
+						 "business-department":"长沙分部",
+						 "sales-area":"中部",
+						 "city":"长沙",
+						 "order-number":666,
+						 "return-date":2018,
+						 "SKU-name":10086,
+						 "sales-amount":80000,
+						 "sales-number":200,
+					}
+                ]
+			});
+	 
+	    });
+			
+			
+		
+		
+	 var TableInit = function () {
+        var obj= {};
+        //初始化Table
+        obj.Init = function () {
+            $('#tradeList').bootstrapTable({
+                //url: './data.js',         //请求后台的URL（*）
+//              method: 'post',                      //请求方式（*）
+//              toolbar: '#toolbar',                //工具按钮用哪个容器
+//              striped: true,                      //是否显示行间隔色
+//              cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+//              pagination: true,                   //是否显示分页（*）
+//              sortable: false,                     //是否启用排序
+//              sortOrder: "asc",                   //排序方式
+//              queryParams:obj.queryParams,//传递参数（*）
+//              sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+//              pageNumber:1,                       //初始化加载第一页，默认第一页
+//              pageSize: 50,                       //每页的记录行数（*）
+//              pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+//              strictSearch: true,
+//              clickToSelect: true,                //是否启用点击选中行
+//              height: 460,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+//              uniqueId: "id",                     //每一行的唯一标识，一般为主键列
+//              cardView: false,                    //是否显示详细视图
+//              detailView: false,                   //是否显示父子表
+                columns: [{
+                    field: 'time',
+                    title: '创建日期'
+                }, {
+                    field: 'source',
+                    title: '来源'
+                }, {
+                    field: 'name',
+                    title: '便利店名称'
+                }, {
+                    field: 'cell-phone-number',
+                    title: '便利店手机号'
+                }, {
+                    field: 'business-department',
+                    title: '事业部'
+                }, {
+                    field: 'sales-area',
+                    title: '销售大区'
+                },  {
+                    field: 'city',
+                    title: '城市'
+                },  {
+                    field: 'order-number',
+                    title: '订单号'
+                }, {
+                    field: 'return-date',
+                    title: '返现日期'
+                },{
+                    field: 'SKU-name',
+                    title: 'SKU名称'
+                },{
+                    field: 'sales-amount',
+                    title: '销售金额(元)'
+                },{
+                    field: 'sales-number',
+                    title: '销售数'
+                }],
+                data:[
+                	{
+						 "id":1,	
+						 "time":2017,
+						 "source":"长沙",
+						 "name":"千寻",
+						 "cell-phone-number":17300797573,
+						 "business-department":"长沙分部",
+						 "sales-area":"中部",
+						 "city":"长沙",
+						 "order-number":666,
+						 "return-date":2018,
+						 "SKU-name":10086,
+						 "sales-amount":80000,
+						 "sales-number":200,
+					}
+                ]
+                ,
+            });
+        };
+        //得到查询的参数
+//      obj.queryParams = function (params) {
+//          var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+//              limit: params.limit,   //页面大小
+//              offset: params.offset,  //页码
+//              sdate: $("#stratTime").val(),
+//              edate: $("#endTime").val(),
+//              sellerid: $("#sellerid").val(),
+//              orderid: $("#orderid").val(),
+//              CardNumber: $("#CardNumber").val(),
+//              maxrows: params.limit,
+//              pageindex:params.pageNumber,
+//              portid: $("#portid").val(),
+//              CardNumber: $("#CardNumber").val(),
+//              tradetype:$('input:radio[name="tradetype"]:checked').val(),
+//              success:$('input:radio[name="success"]:checked').val(),
+//          };
+//          return temp;
+//      };
+        return obj;
+    };
+	</script>
+</body>
+</html>

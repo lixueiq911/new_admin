@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    
+   <link rel="stylesheet" href="../../css/base.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    
+    <script src="../../js/response.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	response(1000);//设置html标签font-size尺寸
+    </script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../css/bootstrap-table.css">
+
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js" ></script>
+	<script src="../../js/bootstrap-table.js"></script>
+	<!-- Latest compiled and minified Locales -->
+	<!-- <script src="js/bootstrap-table-zh-CN.min.js"></script> -->
+	<script src="../../js/bootstrap-table-zh-CN.min.js"></script>
+	
+	
+	
+	<link href="../../css/index.css" rel="stylesheet"/>
+   
+</head>
+<body>
+	
+
+	  
+	    <div class="mui-content mui-scroll-wrapper table">
+	    	<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">基础设置</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">销量管理</li>
+			  </ol>
+			</nav>
+			<div class="content">
+				<div class="form-wrap">
+					<form>
+					  	<ul class='row'>
+					  		<!--<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="startTime" class="col-sm-5 col-form-label">开始时间</label>
+								    <div class="col-sm-7">
+								      <input type="date"  class="form-control" id="startTime" >
+								    </div>
+								   
+					  		</li>
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="endTime" class="col-sm-5 col-form-label">结束时间</label>
+								    <div class="col-sm-7">
+								      <input type="date"  class="form-control" id="endTime" >
+								    </div>
+								   
+					  		</li>-->
+					  		<!--<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="iphone" class="col-sm-5 col-form-label">便利店手机号</label>
+								    <div class="col-sm-7">
+								      <input type="tel"  class="form-control" id="iphone" placeholder="手机号">
+								    </div>
+								   
+					  		</li>
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								   
+								    <label for="name" class="col-sm-4 col-form-label">便利店名称</label>
+								    <div class="col-sm-8">
+								      <input type="password" class="form-control" id="name" placeholder="便利店名称">
+								    </div>
+								  </div>
+					  		</li>-->
+					  		<!--<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								   
+								    <label for="order-number" class="col-sm-4 col-form-label">订单号</label>
+								    <div class="col-sm-8">
+								      <input type="password" class="form-control" id="order-number" placeholder="填写订单号">
+								    </div>
+								  </div>
+					  		</li>
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="source" class="col-sm-4 col-form-label">来源</label>
+								    <div class="col-sm-8">
+								       <select id="source" class="custom-select">
+									        <option selected>Choose...</option>
+									        <option>...</option>
+									     </select>
+								    </div>
+								  </div>
+					  		</li>-->
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="business-department" class="col-sm-4 col-form-label">事业部</label>
+								    <div class="col-sm-8">
+								       <select id="business-department" class="custom-select">
+									        <option selected>Choose...</option>
+									        <option>...</option>
+									     </select>
+								    </div>
+								  </div>
+					  		</li>
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="area" class="col-sm-4 col-form-label">区域</label>
+								    <div class="col-sm-8">
+								      <select class="custom-select" id="area">
+									    <option selected>Choose...</option>
+									    <option value="1">One</option>
+									    <option value="2">Two</option>
+									    <option value="3">Three</option>
+									  </select>
+								    </div>
+								  </div>
+					  		</li>
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								    <label for="city" class="col-sm-4 col-form-label">城市</label>
+								    <div class="col-sm-8">
+								       <select id="city" class="custom-select">
+									        <option >Choose...</option>
+									        <option>...</option>
+									     </select>
+								    </div>
+								  </div>
+					  		</li>
+					  		<li class='col-5 col-xs-4 col-sm-3'>
+					  			<div class="form-group row">
+								   <div class="btn-group" role="group" aria-label="Basic example">
+									  <button type="button" class="btn  btn-primary">查询 </button>
+									  <!--<button type="button" class="btn  btn-primary">导出</button>
+									  <button type="button" class="btn  btn-primary">批量导入</button>-->
+									  <button type="button" class="btn  btn-primary">+新增规则</button>
+									</div>
+					  		</li>
+					  	</ul>
+					  
+					</form>
+					
+					
+					
+					
+				</div>
+			     <div class="wrap">
+			      	<div class="mui-scroll">
+			        	<table id='table' 
+			        		data-height="400"
+			        		data-pagination="true"
+				           data-page-size="5"
+				           data-page-list="[5,8,10]"
+				           data-pagination-first-text="First"
+				           data-pagination-pre-text="Previous"
+				           data-pagination-next-text="Next"
+				           data-pagination-last-text="Last">
+						    <!--<thead>
+						        <tr>
+						            <th data-field="id">Item ID</th>
+						            <th data-field="name">Item Name</th>
+						            <th data-field="price">Item Price</th>
+						        </tr>
+						    </thead>-->
+						</table>
+			    	 </div>
+		      	
+		      </div>
+				
+				
+				
+				
+			</div>
+	    </div> 
+	     <!--表格结束-->
+	 
+	
+	<script>
+		$(function(){
+			
+			$('#table').bootstrapTable({
+//			   showRefresh: true,
+//			   showColumns: true,
+//              search: true,
+			    columns: [{
+                    field: 'startTime',
+                    title: '开始 时间'
+                }, {
+                    field: 'endTime',
+                    title: '结束时间'
+             },
+ //            {
+//                  field: 'source',
+//                  title: '来源'
+//              }, {
+//                  field: 'name',
+//                  title: '便利店名称'
+//              }, {
+//                  field: 'cell-phone-number',
+//                  title: '便利店手机号'
+//              }, 
+				{
+                    field: 'business-department',
+                    title: '事业部'
+                }, {
+                    field: 'sales-area',
+                    title: '销售大区'
+                },  {
+                    field: 'city',
+                    title: '城市'
+                }, 
+//              {
+//                  field: 'order-number',
+//                  title: '订单号'
+//              }, {
+//                  field: 'return-date',
+//                  title: '返现日期'
+//              },{
+//                  field: 'SKU-name',
+//                  title: 'SKU名称'
+//              },
+//              {
+//                  field: 'sales-amount',
+//                  title: '销售金额(元)'
+//              },{
+//                  field: 'sales-number',
+//                  title: '销售数'
+//              }
+				{
+					field:'operation',
+					title:"操作",
+				}
+				],
+				
+               url:'../../json/03-sales-award.json'
+			});
+	 
+	    });
+			
+			
+		
+		
+	 
+	</script>
+</body>
+</html>

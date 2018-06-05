@@ -1,0 +1,63 @@
+@media (min-width: 576px){
+		.modal-dialog{
+		max-width:6rem;
+		margin:1rem auto;
+	}
+		
+}
+.modal .modal-dialog .modal-content{
+	border-radius: .05rem;
+}
+.modal .modal-dialog .modal-content .modal-header{
+	padding:.1rem;
+	background-color: #424242;
+	border-radius: 0;
+	color:#fff;
+}
+.modal .modal-dialog .modal-content .modal-body{
+	padding:.1rem;
+}
+.modal .modal-dialog .modal-content .modal-footer{
+	padding:.1rem;
+}
+.modal .modal-dialog .modal-content h5{
+	font-size: .16rem;
+}
+
+.modal .modal-dialog .modal-content .close{
+	font-size: .16rem;
+	padding:.01rem;
+	margin:0;
+	color:#fff;
+}
+.modal .modal-dialog .modal-content label{
+	text-align: right;
+	
+}
+
+.modal .modal-dialog .modal-content .form-group{
+	margin-bottom: .2rem;
+}
+.modal .modal-dialog .modal-content .modal-footer button{
+	margin:0 .1rem;
+	padding:.05rem .3rem;
+}
+.form-control{
+	border-radius: .025rem;
+	
+}
+#file{
+	display:none;
+	
+}
+.label{
+	margin-bottom: 0;
+}
+.image-size{
+	padding: 0;
+	margin: 0;
+	
+}
+.modal .modal-dialog .modal-content .btn{
+	padding:.0375rem .075rem;
+}

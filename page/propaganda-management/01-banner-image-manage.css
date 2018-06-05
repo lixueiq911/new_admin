@@ -1,0 +1,37 @@
+.table.mui-scroll-wrapper .form-wrap .form-group{
+	margin:.2rem;
+}
+
+.table.mui-scroll-wrapper .form-wrap label{
+	text-align: right;
+	margin:0;
+}
+.table.mui-scroll-wrapper .form-wrap .form-group label i{
+	padding:0 .05rem;
+	color:red;
+}
+
+.table.mui-scroll-wrapper .form-wrap .form-group .button{
+	padding:.05rem .3rem;
+}
+.table.mui-scroll-wrapper .form-wrap .form-group >div{
+	position: relative;
+}
+.table.mui-scroll-wrapper .form-wrap .form-group >div .file{
+	display:none;
+	
+}
+.table.mui-scroll-wrapper .form-wrap .form-group p{
+	line-height: 4;
+	text-indent: 25px;
+}
+
+.button-group{
+	text-align: center;
+	
+}
+.button-group .btn{
+	text-align: center;
+	padding:.05rem .3rem;
+	
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    
+    <script src="js/response.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	response(1240);//设置html标签font-size尺寸
+    </script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-table.css">
+    <base target='myiframe' />
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="js/bootstrap-table.js"></script>
+	<!-- Latest compiled and minified Locales -->
+	<!-- <script src="js/bootstrap-table-zh-CN.min.js"></script> -->
+	<script src="js/bootstrap-table-zh-CN.min.js"></script>
+	
+	
+	
+	<link href="css/index.css" rel="stylesheet"/>
+   
+</head>
+<body>
+	
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable">
+		<!--
+			mui-off-canvas-wrap mui-draggable
+			mui-off-canvas-wrap mui-draggable mui-active 滑开时
+			
+		-->
+	  <!-- 菜单容器 -->
+	 
+	  <!--侧滑导航结束-->
+	  <!-- 主页面容器 -->
+	  	<div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+		    <header class="mui-bar mui-bar-nav">
+		      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+		      	
+				    <ul class="mui-row clearfix">
+				    	<li class='mui-pull-left off'>
+				    		<div class="logo">
+				    			<img ondragstart='return false' src="img/logo.png" alt="" />
+				    		</div>
+				    		
+				    	</li>
+				    	<li class='mui-pull-right'>
+				    		<p>欢迎您,管理员</p>
+				    		<button type="button" class="mui-btn">退出</button>
+				    	</li>
+				    	
+				    </ul>
+				
+		    </header>
+	     	<!--头部结束-->
+	  
+	    	<div class="row main">
+	    		 <div class="col-2 item sidebar">
+	    		 	<ul class="mui-table-view"> 
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right" href="#">基础设置</a>
+					            <div class="mui-collapse-content">
+					                <a href="./page/basic-manage/01-account.html"> 账号管理</a>
+					                <a href="./page/basic-manage/02-sales.html">销量管理</a>
+					                <a href="./page/basic-manage/03-sales-award.html">销量奖励管理</a>
+					                <a href="./page/basic-manage/04-salesman.html">销售人员管理</a>
+					                <a href="./page/basic-manage/05-return-ratio.html">返现比率管理</a>
+					            </div>
+					            
+					        </li>
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right" href="#">宣传管理</a>
+					            <div class="mui-collapse-content">
+					                <a href="./page/propaganda-management/01-banner-image-manage.html">轮播图管理</a>
+					                <a href="./page/propaganda-management/02-weChat-article.html">微信文章管理</a>
+					                <a href="./page/propaganda-management/03-system-message.html">系统消息管理</a>
+					                <a href="./page/propaganda-management/04-task-manage.html">任务管理</a>
+					                <a href="./page/propaganda-management/05-task-respone.html">任务回复</a>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right" href="#">统计分析</a>
+					            <div class="mui-collapse-content">
+					               <a href="./page/statistical-analysis/">执行情况分析</a>
+					        </li>
+					        
+					    </ul>
+	    		 	
+	    		 </div>
+	    		
+	    		<div class="col-10 item">
+	    			 <iframe src="./page/basic-manage/01-account.html" width="100%" height="70%" name='myiframe'></iframe>
+	    			
+	    		</div>
+	    		
+	    	</div>
+	      
+	     <!--表格结束-->
+	 	 </div>
+	</div>
+	<div class="footer" id='footer'>
+		<a href="javascript:;">沪ICP备13034629号-14</a>
+		
+	</div>
+	<script src="js/index.js"></script>
+	<script>
+		$(function(){
+			
+//			$('#table').bootstrapTable({
+////			   showRefresh: true,
+////			   showColumns: true,
+////              search: true,
+//			    columns: [{
+//                  field: 'time',
+//                  title: '创建日期'
+//              }, {
+//                  field: 'source',
+//                  title: '来源'
+//              }, {
+//                  field: 'name',
+//                  title: '便利店名称'
+//              }, {
+//                  field: 'cell-phone-number',
+//                  title: '便利店手机号'
+//              }, {
+//                  field: 'business-department',
+//                  title: '事业部'
+//              }, {
+//                  field: 'sales-area',
+//                  title: '销售大区'
+//              },  {
+//                  field: 'city',
+//                  title: '城市'
+//              },  {
+//                  field: 'order-number',
+//                  title: '订单号'
+//              }, {
+//                  field: 'return-date',
+//                  title: '返现日期'
+//              },{
+//                  field: 'SKU-name',
+//                  title: 'SKU名称'
+//              },{
+//                  field: 'sales-amount',
+//                  title: '销售金额(元)'
+//              },{
+//                  field: 'sales-number',
+//                  title: '销售数'
+//              }],
+//             url:'../../json/data1.json'
+//			});
+	 
+	    });
+			
+			
+		
+		
+	 
+	</script>
+</body>
+</html>

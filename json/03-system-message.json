@@ -1,0 +1,45 @@
+[
+   {
+			 "id":1,	
+			 "startTime":2017,
+			 "endTime":2018,
+			 "source":"长沙",
+			 "name":"千寻",
+			 "cell-phone-number":17300797573,
+			 "business-department":"长沙分部",
+			 "sales-area":"中部",
+			 "city":"长沙",
+			 "order-number":666,
+			 "return-date":2018,
+			 "SKU-name":10086,
+			 "sales-amount":80000,
+			 "sales-number":200,
+			 "operation":[
+			 	"删除",
+			 	"添加"
+			 ],
+			 "password":888,
+			 "status":"进行中",
+			 "total-number-sales":99999999,
+			 "total-sales-amount":666666,
+			 "current-integral":50,
+			 "salesman-name":"鹤腾",
+			 "salesman-cell-phone-number":10086,
+			 "title":"百威",
+			 "image":"../images/1.png",
+			 "link":"www.baidu.com",
+			 "article-title":"百威666",
+			 "brief-description":"百威棒棒棒",
+			 "topic-classification":"百威6系列",
+			 "training-operation":"培训中...",
+			 "push-operation":"推送中...",
+			 "send-time":20071004,
+			 "send-object":"美女",
+			 "message-title":"撩",
+			 "message-content":"正在撩"
+			 
+			 
+			 
+			
+	}
+]

@@ -1,0 +1,18 @@
+﻿[
+	{
+	 "id":1,	
+	 "time":2017,
+	 "source":"长沙",
+	 "name":"千寻",
+	 "cell-phone-number":17300797573,
+	 "business-department":"长沙分部",
+	 "sales-area":"中部",
+	 "city":"长沙",
+	 "order-number":666,
+	 "return-date":2018,
+	 "SKU-name":10086,
+	 "sales-amount":80000,
+	 "sales-number":200,
+	}
+]
+

@@ -1,0 +1,68 @@
+.mui-content .content .toptool-bar{
+	width:580px;
+	margin:auto;
+	
+	
+}
+.mui-content .content .toptool-bar .wrapper .btn{
+	border-radius:50%;
+	width:28px;
+	height:28px;
+	position: relative;
+	line-height: 23px;
+	padding:0;
+	border:2px solid #bfcbd9;
+	color: #bfcbd9;
+}
+
+.mui-content .content .toptool-bar .wrapper .btn-1{
+	background-color: #bfcbd9;
+	border:2px solid #bfcbd9;
+	color:#fff;
+		
+}
+.mui-content .content .toptool-bar .btn-2{
+	border:2px solid #bfcbd9;
+		
+}
+.mui-content .content .toptool-bar .line-wrapper{
+	width:240px;
+	height:32px;	
+	position: relative;
+}
+.mui-content .content .toptool-bar .line-wrapper p{
+	position: absolute;
+	width:100%;
+	height:2px;
+	background-color: #bfcbd9;	
+	top:13px;	
+}
+.mui-content .content .toptool-bar .wrapper .btn span{
+	position: absolute;
+	top:40px;
+	left:50%;
+	margin-left:-24px;
+	color: #bfcbd9;
+	font-size: 12px;
+	
+}
+.mui-content .content .list{
+	
+	margin-top: .5rem;
+}
+.mui-content .content .list dt{
+	margin-top: .2rem;
+	margin-bottom: .1rem;
+}
+.mui-content .content .list dd{
+	margin-bottom: .1rem;
+}
+.mui-content .content .list dd button{
+	margin-bottom: .1rem;
+	padding:.1rem .2rem;
+}
+.mui-content .content .list dd button.upload{
+	display: block;
+	
+	margin:auto;
+}

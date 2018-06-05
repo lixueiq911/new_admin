@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    
+    <link rel="stylesheet" href="../../css/base.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    
+    <script src="../../js/response.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	response(1000);//设置html标签font-size尺寸
+    </script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../css/bootstrap-table.css">
+
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js" ></script>
+	<script src="../../js/bootstrap-table.js"></script>
+	<!-- Latest compiled and minified Locales -->
+	<!-- <script src="js/bootstrap-table-zh-CN.min.js"></script> -->
+	<script src="../../js/bootstrap-table-zh-CN.min.js"></script>
+	
+	
+	
+	<link href="../../css/index.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./01-account_batch-import.css" />
+   
+</head>
+<body>
+	
+	
+	     	<!--头部结束-->
+	    <div class="mui-content mui-scroll-wrapper table">
+	    	<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="#">基础设置</a></li>
+			    <li class="breadcrumb-item " aria-current="page">账户管理</li>
+			     <li class="breadcrumb-item active" aria-current="page">批量导入</li>
+			  </ol>
+			</nav>
+			<div class="content">
+				<div class="toptool-bar">
+					<div class="display_f wrapper">
+						<div class="btn-1 btn ">
+								1
+								<span>上传文件</span>
+							
+						</div>
+						<div class="line-wrapper">
+							<p></p>
+						</div>
+						<div class="btn-2 btn">
+								2
+								<span>数据验证</span>
+							
+						</div>
+						<div class="line-wrapper">
+							<p></p>
+						</div>
+						<div class="btn-3 btn">
+								3
+								<span>同步积分</span>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<dl class="list">
+					<dt> 售点数据导入时注意事项：</dt>
+					<dd> 1.便利店导入时，其手机号不能和销售手机号重复 </dd>
+					<dd> 2.便利店手机号必须是独一无二的，多个便利店之间手机号不可重复 </dd>
+					<dd> 3.便利店的地理位置一定要带上城市，不然系统无法定位  </dd>
+					<dd> 4.报表中单元格不支持带公式，需以文本的方式保存 </dd>
+					<dt> 1.下载批量导入模板，并将数据以文本格式粘贴至模板内</dt>
+					<dd> <button class='btn btn-primary'> 下载模板 </button> </dd>
+					<dt> 2.上传需要导入的文件（仅支持文件大小不超过500KB的Excel2007以上版本的文件）</dt>
+					<dd> <button  class='btn btn-primary'>选取文件</button> </dd>
+					<dd> <button  class='upload btn btn-primary'>上传</button> </dd>
+					
+				</dl>
+				
+				
+			</div>
+	    </div> 
+	     <!--表格结束-->
+	
+	<script>
+		$(function(){
+			
+			$('#table').bootstrapTable({
+//			   showRefresh: true,
+//			   showColumns: true,
+//              search: true,
+			    columns: [{
+                    field: 'time',
+                    title: '创建日期'
+                }, {
+                    field: 'source',
+                    title: '来源'
+                }, {
+                    field: 'name',
+                    title: '便利店名称'
+                }, {
+                    field: 'cell-phone-number',
+                    title: '便利店手机号'
+                }, {
+                    field: 'business-department',
+                    title: '事业部'
+                }, {
+                    field: 'sales-area',
+                    title: '销售大区'
+                },  {
+                    field: 'city',
+                    title: '城市'
+                },  {
+                    field: 'order-number',
+                    title: '订单号'
+                }, {
+                    field: 'return-date',
+                    title: '返现日期'
+                },{
+                    field: 'SKU-name',
+                    title: 'SKU名称'
+                },{
+                    field: 'sales-amount',
+                    title: '销售金额(元)'
+                },{
+                    field: 'sales-number',
+                    title: '销售数'
+                }],
+               url:'../../json/data1.json'
+			});
+	 
+	    });
+			
+			
+		
+		
+	 
+	</script>
+</body>
+</html>

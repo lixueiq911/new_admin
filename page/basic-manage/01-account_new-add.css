@@ -1,0 +1,23 @@
+.mui-content .content form ul li{
+	
+}
+.mui-content .content form ul li>div{
+	margin-bottom: .2rem;
+}
+.mui-content .content form ul li .form-group{
+	margin-bottom: 0;
+}
+.mui-content .content form ul li .form-group label{
+	text-align: right;
+	
+}
+
+.button-group{
+	text-align: center;
+	
+}
+.button-group .btn{
+	text-align: center;
+	padding:.05rem .3rem;
+	
+}

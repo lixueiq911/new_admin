@@ -1,0 +1,19 @@
+.table.mui-scroll-wrapper .form-wrap ul{
+	justify-content: flex-start;
+}
+.table.mui-scroll-wrapper .form-wrap ul li label{
+	text-align: right;
+}
+.table.mui-scroll-wrapper .form-wrap ul li .form-group{
+	
+	margin-bottom: .2rem;
+}
+.button-group{
+	text-align: center;
+	
+}
+.button-group .btn{
+	text-align: center;
+	padding:.05rem .3rem;
+	
+}
